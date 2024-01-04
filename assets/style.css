@@ -1,3 +1,11 @@
+.quizContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; /* This ensures that the container takes up the full height of the viewport */
+}
+
+/* Additional styling for better appearance */
 .quizContainer h3 {
     font-size: 25px;
     text-align: center;
@@ -12,6 +20,7 @@
     font-size: 14px;
     text-align: right;
 }
+
 .quizContainer h1 {
     font-size: 14px;
     text-align: left;
@@ -22,5 +31,19 @@ body {
 }
 
 .startButton {
+    text-align: center;
+}
+
+.quiz {
+    text-align: center;
+    padding: 10%;
+    margin: 10%;
+}
+
+.quiz-text {
+    text-align: center;
+}
+
+.quiz-answers {
     text-align: center;
 }

@@ -1,0 +1,35 @@
+<!-- highscores.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Scores</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <h1>High Scores</h1>
+    <form id="highscoreForm">
+        <label for="initials">Enter Your Initials:</label>
+        <input type="text" id="initials" name="initials" maxlength="3" required>
+        <button type="submit">Submit</button>
+    </form>
+    <ol id="highscoreList"></ol>
+
+    <!-- Ensure these elements exist with corresponding IDs and classes -->
+    <div class="quizContainer" id="quizContainer">
+        <button id="startBtn">Restart Quiz</button>
+        <div id="quiz">
+            <p id="question-text"></p>
+            <div id="question-answers"></div>
+        </div>
+        <p id="paragraphId"></p>
+        <span id="timeLeft"></span>
+        <p id="score"></p>
+        <!-- Add a restart button inside your quizContainer -->
+        <button id="restartBtn" style="display: none;">Restart Quiz</button>
+    </div>
+
+    <script src="./assets/highscores.js"></script>
+</body>
+</html>
